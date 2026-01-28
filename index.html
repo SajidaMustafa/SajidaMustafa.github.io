@@ -3,106 +3,570 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sajida Mustafa | Portfolio</title>
-    <!-- Link to external CSS -->
+    <title>Sajida Mustafa | Software Engineer Portfolio</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="portfolio-item">
-    <img src="images/portfolio-img1.jpg">
-    <div class="overlay">
-        <h3>FundHive App</h3>
-        <p>Startup & Investor Platform</p>
-    </div>
-</div>
-
-
-    <!-- ================== Navbar ================== -->
-    <nav>
-        <div class="logo">Sajida Mustafa</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- ================== NAVBAR ================== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <span class="logo-text">Sajida</span>Mustafa
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- ================== Home Section ================== -->
-    <section id="home" class="home">
-        <h1>Hi, I'm <span>Sajida Mustafa</span></h1>
-        <p>BE Software Engineering Student</p>
-        <p>Graphic Designer</p>
-        <a href="#contact" class="btn">Contact Me</a>
+    <!-- ================== HOME/HERO SECTION ================== -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h3 class="greeting">Hello, I'm</h3>
+                    <h1 class="hero-title">Sajida <span class="highlight">Mustafa</span></h1>
+                    <h2 class="hero-subtitle">Software Engineer & Full Stack Developer</h2>
+                    <p class="hero-description">
+                        BE Software Engineering Graduate from Mehran University. 
+                        Passionate about creating innovative web and mobile solutions.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/SajidaMustafa" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jeyajeyaa--b3a891227/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:sajidamustafa01@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <!-- Replace with your image -->
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b786d4d3?fit=crop&w=500&h=600&q=80" 
+                             alt="Sajida Mustafa" 
+                             class="profile-img"
+                             onerror="this.src='https://ui-avatars.com/api/?name=Sajida+Mustafa&size=400&background=667eea&color=fff&bold=true'">
+                        <div class="image-frame"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- ================== About Section ================== -->
+    <!-- ================== ABOUT SECTION ================== -->
     <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            I am a BE Software Engineering graduate from Mehran University of Engineering & Technology, Jamshoro.
-            I have experience in web and mobile app development and completed a web development internship.
-            I enjoy learning new technologies and aim to start my professional career as a developer.
-        </p>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>BE Software Engineering Graduate</h3>
+                    <p>
+                        I am a BE Software Engineering graduate from <strong>Mehran University of Engineering & Technology, Jamshoro</strong>. 
+                        I have hands-on experience in both web and mobile app development, and I have successfully completed 
+                        a web development internship where I worked on various real-world projects.
+                    </p>
+                    
+                    <p>
+                        I am passionate about learning new technologies and staying updated with the latest trends in software development. 
+                        My goal is to start my professional career as a developer where I can contribute to meaningful projects 
+                        and continue to grow my skills.
+                    </p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-graduation-cap"></i> Education:</span>
+                            <span class="info-value">BE Software Engineering</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-university"></i> University:</span>
+                            <span class="info-value">MUET, Jamshoro</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location:</span>
+                            <span class="info-value">Pakistan</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-briefcase"></i> Status:</span>
+                            <span class="info-value">Seeking Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="stat-number">10+</h3>
+                        <p class="stat-text">Projects Completed</p>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="stat-number">6</h3>
+                        <p class="stat-text">Months Experience</p>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="stat-number">5+</h3>
+                        <p class="stat-text">Certifications</p>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="stat-number">3</h3>
+                        <p class="stat-text">Team Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- ================== Skills Section ================== -->
+    <!-- ================== SKILLS SECTION ================== -->
     <section id="skills" class="skills">
-       <div class="skills-container">
-    <div class="skill-card">
-        <img src="images/web deve skill.jpg">
-        <h3>Web Development</h3>
-    </div>
-    <div class="skill-card">
-        <img src="images/mobile deve skill.jpg">
-        <h3>Mobile Apps</h3>
-    </div>
-    <div class="skill-card">
-        <img src="images/wordpress skill.jpg">
-        <h3>WordPress</h3>
-    </div>
-    <div class="skill-card">
-        <img src="images/graphic designing.jpg">
-        <h3>Graphic Design</h3>
-    </div>
-</div>
-
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span>Skills</span></h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Web Development Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-globe category-icon"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-react"></i>
+                                <span>React.js</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile & Other Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-mobile-alt category-icon"></i>
+                        <h3>Mobile & Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fas fa-mobile"></i>
+                                <span>Android Development</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-wordpress"></i>
+                                <span>WordPress</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>Graphic Design</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git & GitHub</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skill Images Gallery -->
+            <div class="skills-gallery">
+                <h3 class="gallery-title">My Work in Action</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?fit=crop&w=400&h=300" 
+                             alt="Web Development Project"
+                             class="gallery-img"
+                             onerror="this.src='https://via.placeholder.com/400x300/667eea/ffffff?text=Web+Dev'">
+                        <div class="gallery-overlay">
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?fit=crop&w=400&h=300" 
+                             alt="Mobile App Development"
+                             class="gallery-img"
+                             onerror="this.src='https://via.placeholder.com/400x300/764ba2/ffffff?text=Mobile+App'">
+                        <div class="gallery-overlay">
+                            <p>Mobile Apps</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?fit=crop&w=400&h=300" 
+                             alt="WordPress Development"
+                             class="gallery-img"
+                             onerror="this.src='https://via.placeholder.com/400x300/3498db/ffffff?text=WordPress'">
+                        <div class="gallery-overlay">
+                            <p>WordPress</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?fit=crop&w=400&h=300" 
+                             alt="Graphic Design"
+                             class="gallery-img"
+                             onerror="this.src='https://via.placeholder.com/400x300/9b59b6/ffffff?text=Design'">
+                        <div class="gallery-overlay">
+                            <p>Graphic Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- ================== Projects Section ================== -->
+    <!-- ================== PROJECTS SECTION ================== -->
     <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Budget Tracker App</h3>
-            <p>A mobile application developed as a semester project to track income and expenses with a simple and user-friendly interface.</p>
-        </div>
-
-        <div class="project">
-            <h3>FundHive</h3>
-            <p>A startup–investor connection platform focusing on secure communication, smart matching, and post-funding collaboration.</p>
-        </div>
-
-        <div class="project">
-            <h3>Web Development Internship Projects</h3>
-            <p>Completed web development tasks and mini projects during my internship at LetsGrowMore (Feb 2023 – Mar 2023).</p>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span>Projects</span></h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?fit=crop&w=600&h=400" 
+                             alt="Budget Tracker App"
+                             onerror="this.src='https://via.placeholder.com/600x400/2c3e50/ecf0f1?text=Budget+Tracker'">
+                        <div class="project-tag">Mobile App</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Budget Tracker App</h3>
+                        <p class="project-description">
+                            A mobile application developed as a semester project to track income and expenses 
+                            with a simple and user-friendly interface. Features include expense categorization, 
+                            monthly reports, and budget planning.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Android Studio</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?fit=crop&w=600&h=400" 
+                             alt="FundHive Platform"
+                             onerror="this.src='https://via.placeholder.com/600x400/3498db/ffffff?text=FundHive'">
+                        <div class="project-tag">Web Platform</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">FundHive</h3>
+                        <p class="project-description">
+                            A startup-investor connection platform focusing on secure communication, 
+                            smart matching, and post-funding collaboration. Includes features like 
+                            investor matching algorithms, document sharing, and progress tracking.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=600&h=400" 
+                             alt="Web Development Projects"
+                             onerror="this.src='https://via.placeholder.com/600x400/9b59b6/ffffff?text=Web+Projects'">
+                        <div class="project-tag">Web Development</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Web Development Internship Projects</h3>
+                        <p class="project-description">
+                            Completed various web development tasks and mini projects during my internship 
+                            at LetsGrowMore (Feb 2023 – Mar 2023). Projects include responsive websites, 
+                            CRUD applications, and API integrations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/SajidaMustafa" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- ================== Contact Section ================== -->
+    <!-- ================== CONTACT SECTION ================== -->
     <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:sajidamustafa01@gmail.com">sajidamustafa01@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/jeyajeyaa--b3a891227/" target="_blank">Sajida Mustafa</a></p>
-            <p>GitHub: <a href="https://github.com/SajidaMustafa" target="_blank">SajidaMustafa</a></p>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>sajidamustafa01@gmail.com</p>
+                            <a href="mailto:sajidamustafa01@gmail.com" class="info-link">Send Email</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>LinkedIn</h3>
+                            <p>Sajida Mustafa</p>
+                            <a href="https://www.linkedin.com/in/jeyajeyaa--b3a891227/" target="_blank" class="info-link">Connect Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>GitHub</h3>
+                            <p>SajidaMustafa</p>
+                            <a href="https://github.com/SajidaMustafa" target="_blank" class="info-link">View Profile</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>Pakistan</p>
+                            <a href="#" class="info-link">View on Map</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Optional Contact Form -->
+                <div class="contact-form">
+                    <h3>Send me a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- ================== Footer ================== -->
-    <footer>
-        <p>© 2026 Sajida Mustafa | All Rights Reserved</p>
+    <!-- ================== FOOTER ================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home" class="logo">
+                        <span class="logo-text">Sajida</span>Mustafa
+                    </a>
+                    <p>Software Engineer & Full Stack Developer</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> sajidamustafa01@gmail.com</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/SajidaMustafa" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jeyajeyaa--b3a891227/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:sajidamustafa01@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sajida Mustafa. All Rights Reserved.</p>
+                <p>BE Software Engineering - MUET, Jamshoro</p>
+            </div>
+        </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
+
